@@ -1,0 +1,40 @@
+.kht-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-family: 'Orbitron', 'Montserrat', sans-serif;
+}
+
+.kht-badge {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #00F0FF;
+  background: rgba(0, 240, 255, 0.12);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.kht-title {
+  font-size: 76px;
+  font-weight: 900;
+  color: #FFFFFF;
+  letter-spacing: -1.5px;
+  line-height: 1.05;
+  text-shadow: 0 0 40px rgba(0, 240, 255, 0.35);
+  margin-bottom: 24px;
+}
+
+.kht-line {
+  width: 160px;
+  height: 4px;
+  border-radius: 2px;
+  box-shadow: 0 0 20px #00F0FF;
+}

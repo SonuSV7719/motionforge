@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920, height=1080">
+  <style>
+    
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      background: #070913;
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    }
+    .mf-scene {
+      position: relative;
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+    }
+    .mf-clip {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    }
+    .mf-clip.mf-active {
+      visibility: visible;
+    }
+    .mf-text-inner {
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+  
+    #clip-Bt-ROdEDKvrz {
+  background: #00f0ff;
+  border: 0px solid #00f0ff;
+  border-radius: 4px;
+}
+
+    #clip-I3Mwb0XZJxPB {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+  color: #00f0ff;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 6px;
+}
+
+    #clip-RDh138ye3Mof {
+  font-family: 'Inter', sans-serif;
+  font-size: 110px;
+  font-weight: 900;
+  font-style: normal;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 8px;
+  text-shadow: 0 0 40px rgba(0, 240, 255, 0.6), 0 0 80px rgba(255, 0, 85, 0.4);
+}
+
+    #clip-5TM-dtfgA81d {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  color: #ff0055;
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 4px;
+}
+
+  </style>
+</head>
+<body>
+  <div id="mf-scene" class="mf-scene">
+    <div id="clip-Bt-ROdEDKvrz" class="mf-clip mf-shape mf-shape-rectangle" style="z-index:1000;opacity:1;left:960px;top:360px;width:280px;height:6px;transform:translate(-50%, -50%);transform-origin:50% 50%" data-start="0.3" data-duration="5.4"></div>
+    <div id="clip-I3Mwb0XZJxPB" class="mf-clip mf-text" style="z-index:999;opacity:1;left:960px;top:410px;transform:translate(-50%, -50%);transform-origin:50% 50%" data-start="0.6" data-duration="5.2">
+      <span class="mf-text-inner">/// NEXT-GEN AGENTIC VIDEO ENGINE ///</span>
+    </div>
+    <div id="clip-RDh138ye3Mof" class="mf-clip mf-text" style="z-index:998;opacity:1;left:960px;top:520px;transform:translate(-50%, -50%);transform-origin:50% 50%" data-start="1" data-duration="4.8">
+      <span class="mf-text-inner">MOTIONFORGE</span>
+    </div>
+    <div id="clip-5TM-dtfgA81d" class="mf-clip mf-text" style="z-index:997;opacity:1;left:960px;top:670px;transform:translate(-50%, -50%);transform-origin:50% 50%" data-start="1.8" data-duration="4">
+      <span class="mf-text-inner">⚡ 100% CODE-FIRST   •   🤖 AI AGENT NATIVE   •   🚀 60 FPS RENDER</span>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script>
+    
+(function() {
+  'use strict';
+
+  const TOTAL_DURATION = 6;
+  const FPS = 60;
+
+  // Master seekable timeline (paused — renderer controls playback)
+  const master = gsap.timeline({ paused: true });
+
+  // Update clip visibility based on current playback timestamp
+  function updateVisibility(time) {
+    const clips = document.querySelectorAll('.mf-clip');
+    clips.forEach(el => {
+      const start = parseFloat(el.dataset.start || '0');
+      const duration = parseFloat(el.dataset.duration || '0');
+      if (time >= start && time < (start + duration)) {
+        el.style.visibility = 'visible';
+      } else {
+        el.style.visibility = 'hidden';
+      }
+    });
+  }
+
+  // Build clip animations
+  master.set('#clip-Bt-ROdEDKvrz', { scaleX: 0 }, 0.3);
+  master.to('#clip-Bt-ROdEDKvrz', { scaleX: 1, duration: 0.8, ease: 'power4.out' }, 0.3);
+  master.set('#clip-Bt-ROdEDKvrz', { opacity: 0 }, 0.3);
+  master.to('#clip-Bt-ROdEDKvrz', { opacity: 1, duration: 0.4, ease: 'power2.out' }, 0.3);
+  master.fromTo('#clip-Bt-ROdEDKvrz', { opacity: 0 }, { opacity: 1, duration: 5.4 }, 0.3);
+  master.set('#clip-I3Mwb0XZJxPB', { y: 430 }, 0.6);
+  master.to('#clip-I3Mwb0XZJxPB', { y: 410, duration: 0.9, ease: 'power2.out' }, 0.6);
+  master.set('#clip-I3Mwb0XZJxPB', { opacity: 0 }, 0.6);
+  master.to('#clip-I3Mwb0XZJxPB', { opacity: 1, duration: 0.6, ease: 'power2.out' }, 0.6);
+  master.set('#clip-RDh138ye3Mof', { scaleX: 0.7 }, 1);
+  master.to('#clip-RDh138ye3Mof', { scaleX: 1, duration: 1, ease: 'back.out(1.7)' }, 1);
+  master.set('#clip-RDh138ye3Mof', { scaleY: 0.7 }, 1);
+  master.to('#clip-RDh138ye3Mof', { scaleY: 1, duration: 1, ease: 'back.out(1.7)' }, 1);
+  master.set('#clip-RDh138ye3Mof', { opacity: 0 }, 1);
+  master.to('#clip-RDh138ye3Mof', { opacity: 1, duration: 0.5, ease: 'power2.out' }, 1);
+  master.set('#clip-5TM-dtfgA81d', { opacity: 0 }, 1.8);
+  master.to('#clip-5TM-dtfgA81d', { opacity: 1, duration: 0.7, ease: 'power2.out' }, 1.8);
+
+  // Hook visibility update to timeline updates
+  master.eventCallback('onUpdate', () => updateVisibility(master.time()));
+
+  // Expose timeline for renderer control
+  window.__mf_timeline = master;
+  window.__mf_totalDuration = TOTAL_DURATION;
+  window.__mf_fps = FPS;
+
+  // Frame seek hook called by headless Chrome renderer
+  window.__mf_seekToFrame = function(frame) {
+    const time = frame / FPS;
+    master.seek(time, false);
+    updateVisibility(time);
+  };
+
+  // Initial state at frame 0
+  window.__mf_seekToFrame(0);
+
+  // Auto-play and loop in regular desktop browser preview
+  if (typeof window !== 'undefined' && !navigator.userAgent.includes('Headless')) {
+    master.repeat(-1);
+    master.play();
+  }
+
+  // Signal ready
+  window.__mf_ready = true;
+})();
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Test coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Rendered output
+output/
+exports/
+*.mp4
+*.mov
+*.webm
+*.gif
+!templates/**/*.gif
+!examples/**/*.gif
+
+# Frame capture cache
+.mf-cache/
+.frames/
+
+# Project files (user-generated, not part of source)
+mf-project.json

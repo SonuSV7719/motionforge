@@ -1,0 +1,25 @@
+{
+  "id": "lower-third-minimal",
+  "name": "Minimal Lower Third",
+  "category": "lower-thirds",
+  "description": "Clean, modern lower third with name and title. Slide-up entrance, subtle accent bar, smooth exit.",
+  "author": "MotionForge",
+  "version": "1.0.0",
+  "duration": 5,
+  "tags": ["lower-third", "minimal", "name", "title", "clean", "modern", "broadcast"],
+  "props": {
+    "name": { "type": "string", "required": true, "default": "Name", "description": "Person's name" },
+    "title": { "type": "string", "required": false, "default": "", "description": "Job title or description" },
+    "accentColor": { "type": "color", "required": false, "default": "#00D4FF", "description": "Accent bar color" },
+    "position": { "type": "enum", "required": false, "default": "bottom-left", "values": ["bottom-left", "bottom-right", "bottom-center"], "description": "Screen position" },
+    "animStyle": { "type": "enum", "required": false, "default": "slide", "values": ["slide", "fade", "pop"], "description": "Animation style" },
+    "nameColor": { "type": "color", "required": false, "default": "#FFFFFF", "description": "Name text color" },
+    "titleColor": { "type": "color", "required": false, "default": "#AAAAAA", "description": "Title text color" },
+    "bgColor": { "type": "color", "required": false, "default": "rgba(0,0,0,0.7)", "description": "Background color" }
+  },
+  "files": {
+    "composition": "composition.html",
+    "style": "style.css",
+    "animation": "animation.js"
+  }
+}

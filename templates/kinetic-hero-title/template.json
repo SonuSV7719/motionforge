@@ -1,0 +1,30 @@
+{
+  "id": "kinetic-hero-title",
+  "name": "Kinetic Hero Title Reveal",
+  "description": "Bold modern kinetic typography title with glowing tag badge and animated underline accent",
+  "category": "titles",
+  "version": "1.0.0",
+  "author": "MotionForge",
+  "tags": ["title", "hero", "kinetic", "neon", "cyberpunk", "saas"],
+  "duration": 5.0,
+  "parameters": [
+    {
+      "name": "badge",
+      "type": "string",
+      "default": "✦ NEXT-GEN WORKFLOW",
+      "description": "Tag badge text"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "default": "INTELLIGENT MOTION",
+      "description": "Main punchy headline"
+    },
+    {
+      "name": "accentColor",
+      "type": "color",
+      "default": "#00F0FF",
+      "description": "Primary accent / glow color"
+    }
+  ]
+}

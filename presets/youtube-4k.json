@@ -1,0 +1,6 @@
+{
+  "name": "youtube-4k",
+  "description": "YouTube 4K Ultra HD video",
+  "platform": "YouTube",
+  "config": { "width": 3840, "height": 2160, "fps": 30, "format": "mp4", "codec": "libx264", "videoBitrate": "35M", "audioBitrate": "256k", "audioCodec": "aac", "pixelFormat": "yuv420p", "quality": 90 }
+}

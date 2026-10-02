@@ -1,0 +1,6 @@
+{
+  "name": "youtube-shorts",
+  "description": "YouTube Shorts vertical video",
+  "platform": "YouTube",
+  "config": { "width": 1080, "height": 1920, "fps": 30, "format": "mp4", "codec": "libx264", "videoBitrate": "6M", "audioBitrate": "128k", "audioCodec": "aac", "pixelFormat": "yuv420p", "quality": 80 }
+}

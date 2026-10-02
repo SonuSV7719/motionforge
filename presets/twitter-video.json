@@ -1,0 +1,6 @@
+{
+  "name": "twitter-video",
+  "description": "Twitter/X video post",
+  "platform": "Twitter/X",
+  "config": { "width": 1280, "height": 720, "fps": 30, "format": "mp4", "codec": "libx264", "videoBitrate": "5M", "audioBitrate": "128k", "audioCodec": "aac", "pixelFormat": "yuv420p", "quality": 80 }
+}

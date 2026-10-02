@@ -1,0 +1,16 @@
+[
+  {
+    "id": "lower-third-minimal",
+    "name": "Minimal Lower Third",
+    "category": "lower-thirds",
+    "description": "Clean, modern lower third with name and title",
+    "tags": ["lower-third", "minimal", "name", "title", "clean", "modern"]
+  },
+  {
+    "id": "kinetic-hero-title",
+    "name": "Kinetic Hero Title Reveal",
+    "category": "titles",
+    "description": "Bold modern kinetic typography title with glowing tag badge and animated underline accent",
+    "tags": ["title", "hero", "kinetic", "neon", "cyberpunk", "saas"]
+  }
+]

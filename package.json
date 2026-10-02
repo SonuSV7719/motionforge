@@ -1,0 +1,58 @@
+{
+  "name": "motionforge",
+  "version": "0.1.0",
+  "description": "Open source agentic motion graphics & video editing toolkit. Create professional videos using AI coding agents.",
+  "license": "Apache-2.0",
+  "author": "MotionForge Contributors",
+  "type": "module",
+  "bin": {
+    "mf": "./dist/cli/index.js",
+    "motionforge": "./dist/cli/index.js"
+  },
+  "main": "./dist/core/index.js",
+  "types": "./dist/core/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/core/index.js",
+      "types": "./dist/core/index.d.ts"
+    },
+    "./cli": {
+      "import": "./dist/cli/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli/index.js",
+    "lint": "eslint src/",
+    "test": "node --test dist/**/*.test.js"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "chalk": "^5.4.1",
+    "puppeteer": "^24.0.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "ora": "^8.2.0",
+    "nanoid": "^5.1.5"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.27",
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "motion-graphics",
+    "video-editing",
+    "ai-agent",
+    "coding-agent",
+    "video-generation",
+    "gsap",
+    "animation",
+    "ffmpeg",
+    "mcp",
+    "open-source"
+  ]
+}
